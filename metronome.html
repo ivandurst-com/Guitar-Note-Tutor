@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Guitar Note Tutor</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+	<div id="metronome">
+		<h1>Guitar Note Tutor</h1>
+        <p class="padded help">Click "<a href="#">Need Help?</a>" below for instructions and a fretboard note chart.</p>
+		<div id="settingsContainer">
+			<div id="settings">
+				<div>
+					<label>Beats Per Minute:</label>
+					
+					<div class="buttons">
+						<input type="text" name="bpm" id="bpm" value="100">
+						<button id="bpmPlus" class="plusMinus">+</button>
+						<button id="bpmMinus" class="plusMinus">-</button>
+						<button id="start" value="start">start</button>
+					</div>
+				</div>
+				<div>
+					<label>Beats Per Bar:</label>
+					
+					<div class="buttons">
+						<input type="text" name="bpb" id="bpb" value="4">
+						<button id="bpbPlus" class="plusMinus" value="+">+</button>
+						<button id="bpbMinus" class="plusMinus" value="-">-</button>
+						<button id="stop" value="stop">stop</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="note">
+			 Note: <span id="noteIndicator"></span>
+		</div>
+	</div>
+    <div class="help center help-link">
+        <a href="#">Need Help?</a>
+    </div>
+    <div class="notes hide">
+        <p class="padded">This exercise is intended to help you learn the notes on the guitar, one string at a time. Pick a string to start with, set your <b>beats per minute</b> and your <b>beats per bar</b>, and click "<b>Start</b>". You will be shown a note - try to play that note on your chosen string on the 4th beat of the measure! Once you get good at it, try to play it on the 3rd, then 2nd beat of the measure, then move to the next string when you're ready. Good luck!</p>
+        <p>(Click image to see full size)</p>
+        <a href="images/notes.png"><img src="images/notes.png" alt=""></a>
+    </div>
+</div>
+<div id="audioHide" class="hide">
+	<audio id="beepOne" src="sounds/beat.wav" preload="auto" controls="controls">Your browser is not supported. Get a better standards compliant browser!</audio>
+	<audio id="beepTwo" src="sounds/accent.wav" preload="auto" controls="controls">Your browser is not supported. Get a better standards compliant browser!</audio>
+</div>
+</body>
+</html>

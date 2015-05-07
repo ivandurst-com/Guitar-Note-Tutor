@@ -1,0 +1,75 @@
+
+.container {
+  max-width: 570px;
+}
+#metronome {
+  min-height: 372px;
+}
+#settings input,#settings button {
+	background-color: #eee;
+	border: 1px solid #ddd;
+	border-radius:5px;
+	box-sizing:border-box;
+	display: inline-block;
+	height: 30px;
+	margin: 0 0 1em;
+	padding: 0 1em;
+	vertical-align: text-top;
+}
+#settings input {
+	display: block;
+	width: 148px;
+}
+#settings label {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	top: 6px;
+	min-width: 136px;
+}
+.buttons {
+	display: inline-block;
+	vertical-align: top;
+}
+.note {
+	font-size: 30px;
+  line-height: 1.2em;
+	margin-top: 0;
+	text-align: center;
+}
+.note span {
+	display: block;
+	color: #2B68AD;
+	font-size: 1.4em;
+}
+.padded {
+  max-width: 700px;
+  margin: 1em auto;
+}
+.notes img {
+  max-width: 100%;
+}
+.help-link {
+  padding: 25px 0;
+}
+.hide {
+	display: none;
+}
+.center {
+  text-align: center;
+}
+@media only screen and (min-width:523px){
+	.note {
+		font-size: 80px;
+	}
+	#settings input {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
+@media only screen and (max-height:474px){
+	.note span {
+		display: inline;
+		font-size: 1em;
+	}
+}
